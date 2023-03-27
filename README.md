@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Travel App by modext
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
+<p>This is the capstone project for Udacity, where I am required to build a Travel App that obtains a desired trip location & date from the user. That information will then display the weather and an image of the location using information obtained from external APIs. The APIs that I used are <a href="http://www.geonames.org/export/web-services.html">Geonames API</a>, <a href="https://www.weatherbit.io/api">Weatherbit API</a> and <a href="https://pixabay.com/api/docs/">Pixabay API</a>.</p>
 
-## Available Scripts
+**Features included in the App:**
+<ul>
+  <li>Ability to add multiple trips</li>
+  <li>Ability to delete a trip</li>
+  <li>Each trip has a "To do" note taker</li>
+  <li>User can generate a pdf file for each trip</li>
+  <li>Retrieves weather data depending on the trip's length</li>
+  <li>A relevant image will appear depending on the trip's location</li>
+</ul>
 
-In the project directory, you can run:
+## Dependencies and Packages
+<ul>
+  <li>HTML</li>
+  <li>Sass</li>
+  <li>Javascript</li>
+  <li>Babel</li>
+  <li>Webpack</li>
+  <li>NodeJS (npm & Express)</li>
+  <li>Jest (development)</li>
+  <li><a href="http://www.geonames.org/export/web-services.html">Geonames API</a></li>
+  <li><a href="https://www.weatherbit.io/api">Weatherbit API</a></li>
+  <li><a href="https://pixabay.com/api/docs/">Pixabay API</a></li>
+  <li><a href="https://www.npmjs.com/package/dotenv">dotenv Package</a></li>
+  <li><a href="https://www.npmjs.com/package/uuid">UUID Package</a></li>
+  <li><a href="https://www.npmjs.com/package/jspdf">jsPDF Package</a></li>
+  <li><a href="https://html2canvas.hertzen.com/">html2canvas Package</a></li>
+  <li><a href="https://www.npmjs.com/package/workbox-webpack-plugin">Workbox Webpack Plugin Package (Service Workers)</a></li>
+</ul>
 
-### `yarn start`
+## Usage
+This project does not have the API Keys for <a href="https://www.weatherbit.io/api">Weatherbit API</a> and <a href="https://pixabay.com/api/docs/">Pixabay API</a>. So if you want to run this project in your desktop, you will need to register for the API Keys and have them saved in the .env file as:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+````
+WEATHER_API_KEY=****************
+PIXABAY_API_KEY=*****************
+````
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To run the project, you'll need to have NodeJS in your desktop. In the project's directory, in the terminal, you'll need to run: 
 
-### `yarn test`
+````
+npm install
+````
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+and afterwards,
 
-### `yarn build`
+````
+npm run build-prod
+````
+This is so that your project's folder will have a dist folder containing all the files bundled by webpack. The server also points to this folder, so running those commands is necessary.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run the web application you can run the following command line in your terminal.
+````
+npm start
+````
+Then in your browser, go to **localhost:8080** where your web app is at.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots of the Travel App
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="https://user-images.githubusercontent.com/86360050/139248869-5e866c52-bf16-421e-baa6-5d1f687a2bb9.png" alt="travel app">
+<p align="center"><em>"The travel app when you first enter upon the site"</em></p>
 
-### `yarn eject`
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img src="https://user-images.githubusercontent.com/86360050/139249011-f1c04475-f532-4c5f-855e-dd4710aabec9.png" alt="modal form for add trip">
+<p align="center"><em>"The modal form, where users enter their trip destination"</em></p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<img src="https://user-images.githubusercontent.com/86360050/139249414-f83cf79b-64fc-4019-b284-09475235a405.png" alt="trip card with the current weather">
+<p align="center"><em>"The card that displays the trip: Current Weather"</em></p>
+<br/>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<img src="https://user-images.githubusercontent.com/86360050/139250254-dfac7b77-f023-4ac7-a262-fa6a132f79a7.png" alt="trip card with the forecast weather">
+<p align="center"><em>"The card that displays the trip: Forecast Weather"</em></p>
 
-## Learn More
+<br/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img src="https://user-images.githubusercontent.com/86360050/139250909-bbeeb79a-65af-4e68-8784-6c6403d50bf0.png" alt="to do list">
+<p align="center"><em>"The to-do-list"</em></p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br/>
 
-### Code Splitting
+<p align="center"><img src="https://user-images.githubusercontent.com/86360050/139251082-320e61d3-e78e-4d2d-ad43-20fc47efaf02.png" alt="mobile view for travel app"></p>
+<p align="center"><em>"Responsive Design: Mobile View"</em></p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br/>
 
-### Analyzing the Bundle Size
+<p align="center"><img src="https://user-images.githubusercontent.com/86360050/139251152-2cd0178a-ca70-47d9-a877-aa1950dcc747.png" alt="mobile view for travel app with modal"></p>
+<p align="center"><em>"Responsive Design: Mobile View with Modal Form"</em></p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+built by Modext
