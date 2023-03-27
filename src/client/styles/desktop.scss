@@ -1,0 +1,44 @@
+@media (min-width: 960px) {
+
+    /* Header */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Modal */
+    .modal {
+        width: 50em;
+    }
+
+    .modal-header, .modal-footer, .form-group {
+        padding: 1rem 3rem;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+
+    .date {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Card */
+    .card {
+        display: grid;
+        grid-template-columns: 40vw 1fr;    
+
+        .info {
+            margin-left: 1em;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: unset;
+            align-content: unset;
+        }
+    }
+    
+}

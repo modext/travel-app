@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <title>Travel App</title>
+</head>
+<body>
+    <header>
+        <h1>Travel App</h1>
+        <button id="myBtn">Add Trip</button>
+    </header>
+
+    <div id="myModal" class="modal">
+        <div class="modal-header">
+            <h2>Add Trip</h2>
+            <span class="close">&times;</span>
+        </div>
+        <form onsubmit="return Client.tripForm(e)">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" name="location" id="location" placeholder="Enter Location..." required>
+                </div>
+                <div class="date">
+                    <div class="form-group">
+                        <label for="departure">Departure date:</label>
+                        <input type="date" name="departure" id="departure" required>
+                    </div>    
+                    <div class="form-group">
+                        <label for="return">Return date:</label>
+                        <input type="date" name="return" id="return" required>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" id="submitForm" onsubmit="return Client.tripForm(e)">Add</button>
+            </div>
+        </form>
+    </div>
+    <main>
+        <p class="msg active"><em>You currently have no trips planned.</em> &#128577;</p>        
+    </main>
+
+    <footer>
+        Travel App by Lucinda Ly
+    </footer>
+
+    <script>
+        //Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                //registration was successful
+                console.log('ServiceWorker registration is successful: ', registration.scope);
+                }, function(err) {
+                //registration failed 
+                console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

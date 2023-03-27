@@ -1,0 +1,62 @@
+@import "./variables";
+
+.modal {
+    display: none;
+    position: fixed;
+    justify-self: center;
+    margin-top: 5vh;
+    width: 20em;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border-radius: 5px;
+    box-shadow: 0 0 30px 5px $shadow;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        font-size: 3rem;
+        cursor: pointer;
+
+        &:hover{
+          opacity: 0.9;  
+        }
+    }
+}
+
+.modal-header, .modal-footer, .form-group {
+    padding: 0.5rem 1.5rem;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input {
+    width: 95%;
+    padding: 0.5em;
+    background-color: $input-color;
+    border: 0;
+    border-radius: 3px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+        padding: 1em 2.5em;
+        font-size: 1rem;
+        background-color: $primary-color;
+
+        &:focus {
+            transform: scale(0.98);
+        }
+    }
+}
