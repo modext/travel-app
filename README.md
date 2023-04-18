@@ -61,36 +61,36 @@ Then in your browser, go to **localhost:8080** where your web app is at.
 
 ## Screenshots of the Travel App
 
-<img src="https://user-images.githubusercontent.com/86360050/139248869-5e866c52-bf16-421e-baa6-5d1f687a2bb9.png" alt="travel app">
+<img src="https://user-images.githubusercontent.com/33578391/232921301-e74864ae-68ed-400f-92f0-24983df38b14.png" alt="travel app">
 <p align="center"><em>"The travel app when you first enter upon the site"</em></p>
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/86360050/139249011-f1c04475-f532-4c5f-855e-dd4710aabec9.png" alt="modal form for add trip">
+<img src="https://user-images.githubusercontent.com/33578391/232921320-4c93576e-0297-40dd-8dd7-7917fdb914b1.png" alt="modal form for add trip">
 <p align="center"><em>"The modal form, where users enter their trip destination"</em></p>
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/86360050/139249414-f83cf79b-64fc-4019-b284-09475235a405.png" alt="trip card with the current weather">
+<img src="https://user-images.githubusercontent.com/33578391/232921316-a2dd820e-1c82-41f7-a985-1ba4d65d51d9.png" alt="trip card with the current weather">
 <p align="center"><em>"The card that displays the trip: Current Weather"</em></p>
 <br/>
 
-<img src="https://user-images.githubusercontent.com/86360050/139250254-dfac7b77-f023-4ac7-a262-fa6a132f79a7.png" alt="trip card with the forecast weather">
+<img src="https://user-images.githubusercontent.com/33578391/232921311-b536a29c-9c83-4dd7-bc9c-2e79d26f1c57.png" alt="trip card with the forecast weather">
 <p align="center"><em>"The card that displays the trip: Forecast Weather"</em></p>
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/86360050/139250909-bbeeb79a-65af-4e68-8784-6c6403d50bf0.png" alt="to do list">
+<img src="https://user-images.githubusercontent.com/33578391/232921309-305c1e13-2cef-4564-a592-2a1d4ff05dbc.png" alt="to do list">
 <p align="center"><em>"The to-do-list"</em></p>
 
 <br/>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/86360050/139251082-320e61d3-e78e-4d2d-ad43-20fc47efaf02.png" alt="mobile view for travel app"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/33578391/232921307-ee43a0ca-8ff5-4a2f-8bf6-1ca9cb8a01de.png" alt="mobile view for travel app"></p>
 <p align="center"><em>"Responsive Design: Mobile View"</em></p>
 
 <br/>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/86360050/139251152-2cd0178a-ca70-47d9-a877-aa1950dcc747.png" alt="mobile view for travel app with modal"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/33578391/232921304-c27453a9-2191-455e-a7c2-11717c369f61.png" alt="mobile view for travel app with modal"></p>
 <p align="center"><em>"Responsive Design: Mobile View with Modal Form"</em></p>
 
 built by Modext
